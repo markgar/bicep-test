@@ -31,4 +31,4 @@ jobs:
     - name: Check the result
       shell: bash
       run: |
-        echo vnet.json
+        cat vnet.json

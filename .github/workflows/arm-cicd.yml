@@ -20,7 +20,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - uses: actions/checkout@v2
-    
+
     # Runs the bicep CLI action - individual files
     - name: Run Bicep build
       uses: aliencube/bicep-build-actions@v0.1
@@ -31,5 +31,4 @@ jobs:
     - name: Check the result
       shell: bash
       run: |
-        shopt -s globstar
-        ls -altR **/sample*.*
+        echo vnet.json
